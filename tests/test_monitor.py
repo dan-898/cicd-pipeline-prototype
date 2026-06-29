@@ -1,8 +1,4 @@
-"""
-Unit tests voor het system health monitor script.
-"""
 
-import pytest
 from app.monitor import (
     get_cpu_usage,
     get_disk_usage,
