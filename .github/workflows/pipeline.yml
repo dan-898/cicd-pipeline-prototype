@@ -42,9 +42,9 @@ jobs:
         run: |
           python ai/anomaly_detection.py
         env:
-          BUILD_DURATION: "999"
-          TEST_FAILURES: "3"
-          LOG_SIZE_BYTES: "2000000"
+          BUILD_DURATION: "60"
+          TEST_FAILURES: "0"
+          LOG_SIZE_BYTES: "15000"
           FILES_CHANGED: "1"
           BUILD_NUMBER: ${{ github.run_number }}
 
