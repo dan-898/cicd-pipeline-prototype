@@ -14,7 +14,7 @@ def get_cpu_usage():
 def get_disk_usage(path="/"):
     """Geeft schijfgebruik terug als percentage."""
     usage = psutil.disk_usage(path)
-    return round((usage.used / usage.total) * 100, 2)
+    return round((usage.used / usage.total) * 100, 2) * -1
 
 
 def get_memory_usage():
